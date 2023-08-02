@@ -6,7 +6,7 @@ function ProjectSt() {
         <Format
             leftContent={
                 <div className="st-left">
-                    <img src="/images/StreamlitProject.png" alt="Project Input Example" />
+                    <img src="/images/StreamlitProject.jpg" alt="Project Input Example" />
                 </div>
             }
             rightContent={
