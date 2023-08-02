@@ -1,0 +1,92 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80%; /* Set maximum width to ensure the slideshow scales with the screen */
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Hide any overflowing content to prevent horizontal scroll */
+}
+
+/* Hide all slides by default */
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+    .mySlides img {
+        border-radius: 14%;
+        width: 100%; /* Make the image fill the width of the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+/* Optional: Add styling to the number text */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Previous and Next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    padding: 0;
+    margin-top: -20px; /* Half of the button height */
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Position the "prev" button on the left side */
+.prev {
+    left: 1vw;
+}
+
+/* Position the "next" button on the right side */
+.next {
+    right: 1vw;
+}
+
+    /* On hover, add a black background color with less transparency */
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 1;
+    }
+
+/* Optional: Add a fade animation when changing slides */
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Media query for smaller screens, like mobile phones */
+@media screen and (max-width: 767px) {
+    .slideshow-container {
+        max-width: 100%; /* Ensure the slideshow takes full width on smaller screens */
+    }
+
+    .prev, .next {
+        font-size: 14px; /* Adjust the button size for smaller screens */
+    }
+}

@@ -1,0 +1,35 @@
+.ProjectSd-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout by default for smaller screens */
+    grid-gap: 30px; /* Add some gap between grid items */
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.sd-left {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: 30px;
+}
+
+    .sd-left img {
+        max-width: 100%; /* Make the image container take up the full width of its parent */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+.sd-right {
+    text-align: left; /* Align the content to the left */
+}
+
+/* Media query for tablet and desktop view */
+@media screen and (min-width: 768px) {
+    .ProjectSd-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablet and desktop view */
+        grid-gap: 50px; /* Increase the spacing between columns */
+    }
+
+    .sd-left {
+        padding-left: 0; /* Remove the left padding on larger screens */
+    }
+}

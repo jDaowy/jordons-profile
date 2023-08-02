@@ -1,0 +1,61 @@
+/* Intro container */
+.intro-flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* Base styles for the Intro container */
+.intro-grid {
+    width: 90%; /* Adjust the width as needed */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout initially */
+    grid-gap: 20px; /* Add gap between grid items for spacing */
+    align-items:center;
+}
+
+.i-right img{
+    border-radius:14%;
+    width: auto;
+    height: 30vw;
+    object-fit:cover;
+}
+
+/* Styles for the left and right sections inside the Intro container */
+.i-left,
+.i-right {
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+/* Media query for larger screens, like tablets and desktops */
+@media screen and (min-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 50% 50%; /* Two columns layout for larger screens */
+    }
+}
+
+/* Media query for smaller screens, like mobile phones */
+@media screen and (max-width: 767px) {
+    .intro-grid {
+        grid-template-columns: 1fr; /* Switch to a single column layout for smaller screens */
+        /*min-height: 0;*/ /* Remove min-height to allow content to shrink */
+    }
+
+    /* Center the left and right sections on smaller screens */
+    .i-left,
+    .i-right {
+        text-align: center;
+    }
+
+    .i-right img{
+        width:90%;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .i-right img {
+        width: 90%;
+        height:90%;
+    }
+}

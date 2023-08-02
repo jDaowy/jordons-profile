@@ -1,0 +1,28 @@
+.header-flex {
+    display: flex;
+    justify-content: center;
+    background-color: #514D4A;
+    max-height: 70px;
+}
+
+.header-grid {
+    display: grid;
+    width: 80%;
+    align-items: center;
+    height: 70px;
+    max-height: 70px;
+    grid-template-columns: 50% 50%;
+}
+
+.page-name {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .header-grid {
+        grid-template-columns: 1fr;
+    }
+}
