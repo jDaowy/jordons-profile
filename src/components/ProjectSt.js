@@ -15,7 +15,7 @@ function ProjectSt() {
                     <p>
                         A streamlit app for the textual generation of stablediffusion
                         <br />
-                        prompts. Uses LangChain framework, Huggingface API and StreamLit. 
+                        prompts. Coded in Python and uses LangChain framework, Huggingface API and StreamLit. 
                     </p>
                     <a href="https://st-magicprompt-stablediffusion-1exnyen2k2h.streamlit.app/">
                         Visit The App
