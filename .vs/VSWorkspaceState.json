@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\public\\images",
     "\\src",
     "\\src\\assets",
     "\\src\\components",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\Profile.js",
+  "SelectedNode": "\\src\\components\\List.js",
   "PreviewInSolutionExplorer": false
 }

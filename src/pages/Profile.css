@@ -1,111 +1,16 @@
-/* ProjectSt.css */
-/* Profile.css */
-
-.Profile-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px; /* Add vertical spacing between grid items */
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 15px;
-}
-
 .Profile-avatar {
     max-width: 100%; /* Set a maximum width for the image */
     height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Adjust the object-fit property as needed */
+    object-fit: contain; /* Adjust the object-fit property as needed */
     border-radius: 14%; /* Add rounded corners to the image */
 }
 
-.ProfileLeft {
-    /* Existing styles for the left container */
-}
-
-.ProfileRight {
-    /* Existing styles for the right container */
-}
 
 /* Media query for smaller screens, like mobile phones */
 @media screen and (max-width: 767px) {
-    .Profile-container {
-        grid-row-gap: 10px; /* Adjust the spacing for smaller screens */
-        min-height: 0;
-    }
 
-    .ProfileLeft,
-    .ProfileRight {
-        /* Add some margin or padding to the bottom to create spacing */
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
-
-    /* Add styles for the grid below (e.g., ProjectSt) */
-    .ProjectSt-container {
-        /* Add margins or paddings to create spacing between the grids */
-        margin-top: 20px;
-        padding-top: 20px;
+    .ListItems {
+        width: 60vw;
+        word-wrap: break-word;
     }
 }
-
-
-/*.Profile-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;*/ /* Two equal-width columns */
-    /*grid-column-gap: 100px;*/ /* Increase the spacing between columns */
-    /*margin: 0 auto;
-    margin-top: 50px;
-    max-width: 800px;
-    padding: 0 15px;
-}
-
-.Profile-avatar-container {
-    grid-column: 1 / 2;*/ /* Place the photo container in the first column */
-    /*max-width: 400px;*/ /* Set a maximum width for the photo container */
-    /*text-align: center;*/ /* Center the photo horizontally */
-/*}
-
-.Profile-avatar {
-    border-radius: 14%;
-    width: 100%;*/ /* Make the photo container take up the full width of its parent */
-    /*height: auto;*/ /* Maintain aspect ratio */
-/*}
-
-.ProfileRight {
-    grid-column: 2 / 3;*/ /* Place the content container in the second column */
-/*}
-
-.ProfileLeft,
-.ProfileRight {
-    text-align: center;*/ /* Center the content in both columns */
-/*}
-
-    .ProfileRight > h2 {
-        text-align: center;
-    }
-
-.ListItems > ul > li {
-    text-align: center;
-}*/
-
-/* Media query for tablet and desktop view */
-/*@media screen and (min-width: 768px) {
-    .Profile-avatar-container {
-        margin-right: 0;*/ /* Remove the right margin to center the photo in its container */
-    /*}
-}*/
-
-/* Media query for smaller screens, like mobile phones */
-/*@media screen and (max-width: 767px) {
-    .Profile-container {
-        grid-template-columns: 1fr;*/ /* One column layout for smaller screens */
-        /*grid-column-gap: 0;*/ /* Remove the spacing between columns */
-    /*}
-
-    .Profile-avatar-container {
-        margin-bottom: 20px;*/ /* Add some spacing between the photo and the content */
-    /*}
-
-    .ProfileRight {
-        grid-column: 1 / 2;*/ /* Place the content container in the first column */
-    /*}
-}*/

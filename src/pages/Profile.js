@@ -36,6 +36,7 @@ function Profile({ userName }) {
 
     // Step 2: Replace the existing return statement with the Format component
     return (
+        <div className="profile-container">
         <Format
             leftContent={
                 loading ? (
@@ -59,8 +60,10 @@ function Profile({ userName }) {
                         </div>
                     )}
                 </div>
+
             }
-        />
+            />
+        </div>
     );
 }
 
