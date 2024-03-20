@@ -10,10 +10,11 @@ function IntroContent() {
         </div>
 
         <p className="speel">
-          Fueled by green tea and a love for creative problem-solving, I turn
-          lines of code into captivating web experiences. I'm always eager to
-          learn new technologies and tackle exciting challenges. Let's build
-          something awesome together!
+          I'm a full-stack developer passionate about building seamless user
+          experiences. My expertise lies in crafting efficient back-end systems
+          and visually engaging front-end interfaces. I'm eager to contribute my
+          skills to innovative projects that push the boundaries of software
+          engineering.
         </p>
         <img
           src="/umlogo.jpg"

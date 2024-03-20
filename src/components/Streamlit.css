@@ -1,5 +1,7 @@
 .st-main{
     display: flex;
+    flex-grow: 1;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -26,4 +28,14 @@
 
   .st-link{
     color: #93aeda;
+  }
+
+  @media (max-width: 768px) { 
+    .st-main{
+      flex-direction: column;
+      height: 80vh;
+    }
+    .my-st-pic{
+      width: 50vw;
+    }
   }
