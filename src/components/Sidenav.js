@@ -2,7 +2,7 @@ import "./Sidenav.css";
 import React, { useState, useEffect } from "react";
 
 function Sidenav({ currentState, setCurrentState }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   // useEffect hook to run code after the component renders
   useEffect(() => {
@@ -50,17 +50,23 @@ function Sidenav({ currentState, setCurrentState }) {
               className={`but ${currentState === 1 ? "active" : ""}`}
               onClick={() => handleItemClick(1)} // Add onClick handler
             >
-              Github Rest API
+              Image2Text
             </span>
             <span
               className={`but ${currentState === 2 ? "active" : ""}`}
               onClick={() => handleItemClick(2)} // Add onClick handler
             >
-              Image Generation
+              Github Rest API
             </span>
             <span
               className={`but ${currentState === 3 ? "active" : ""}`}
               onClick={() => handleItemClick(3)} // Add onClick handler
+            >
+              Image Generation
+            </span>
+            <span
+              className={`but ${currentState === 4 ? "active" : ""}`}
+              onClick={() => handleItemClick(4)} // Add onClick handler
             >
               LangChain LLM
             </span>

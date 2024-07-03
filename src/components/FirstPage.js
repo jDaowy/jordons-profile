@@ -5,9 +5,10 @@ import CharacterScreen from "./CharacterScreen";
 import Streamlit from "./Streamlit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import VertexAI from "./VertexAI/VertexAI";
 
 function FirstPage({ currentState, setCurrentState }) {
-  const MAX_STATE = 3; // Maximum value for currentState
+  const MAX_STATE = 4; // Maximum value for currentState
 
   const handleGoBack = () => {
     setCurrentState((prev) => Math.max(0, prev - 1));
@@ -26,9 +27,10 @@ function FirstPage({ currentState, setCurrentState }) {
       </div>
       <div className="content">
         {currentState === 0 && <IntroContent />}
-        {currentState === 1 && <GitStuff userName="jDaowy" />}
-        {currentState === 2 && <CharacterScreen />}
-        {currentState === 3 && <Streamlit />}
+        {currentState === 1 && <VertexAI />}
+        {currentState === 2 && <GitStuff userName="jDaowy" />}
+        {currentState === 3 && <CharacterScreen />}
+        {currentState === 4 && <Streamlit />}
       </div>
 
       <div className="nav-buttons">

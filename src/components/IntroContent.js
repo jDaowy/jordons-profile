@@ -1,6 +1,8 @@
 import "./IntroContent.css";
 
 function IntroContent() {
+  const vertexLink = "https://gemini-fb-382fd.web.app/";
+
   return (
     <div className="content">
       <img src="/me.png" alt="AI Generated Me" className="me" />
@@ -14,7 +16,19 @@ function IntroContent() {
           experiences. My expertise lies in crafting efficient back-end systems
           and visually engaging front-end interfaces. I'm eager to contribute my
           skills to innovative projects that push the boundaries of software
-          engineering.
+          engineering.{" "}
+          <strong>
+            Try my latest app in the following link that uses Google Firebase
+            and Google VertexAI to digitize handwriting.{" "}
+          </strong>
+          <a
+            className="vertex-link"
+            href={vertexLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Image2Text
+          </a>
         </p>
         <img
           src="/umlogo.jpg"
