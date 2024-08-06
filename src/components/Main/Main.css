@@ -22,9 +22,8 @@
   transition: all 1s;
 }
 
-.container.sidebar-collapsed {
-  /* Adjust grid template columns when collapsed */
-  grid-template-columns: 0.035fr 1fr; /* Fixed width for sidebar, rest to content */
+.mobile-display.collapsed {
+  grid-template-columns: 0.035fr 1fr;
 }
 
 .title {

@@ -31,7 +31,11 @@ function Main() {
       >
         <div className={`sidebar ${isSidebarExpanded ? "" : "collapsed"}`}>
           {!isMobile ? (
-            <div className="mobile-display">
+            <div
+              className={`mobile-display ${
+                isSidebarExpanded ? "" : "collapsed"
+              }`}
+            >
               <Sidenav
                 currentState={currentState}
                 setCurrentState={setCurrentState}
