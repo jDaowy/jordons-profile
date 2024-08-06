@@ -5,7 +5,11 @@ function VertexAI() {
 
   return (
     <div className="vertex-flex">
-      <img className="vertex-logo" src="./vertex-ai-logo.png"></img>
+      <img
+        className="vertex-logo"
+        src="./vertex-ai-logo.png"
+        alt="vertex logo"
+      ></img>
       <div className="vertex-text">
         <div className="grad-container">
           <h1>Image2Text</h1>

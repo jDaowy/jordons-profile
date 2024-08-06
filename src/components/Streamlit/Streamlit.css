@@ -1,0 +1,74 @@
+.st-main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.magic-gradient {
+  background: linear-gradient(to right, #ff5e57, #2196f3);
+  -webkit-background-clip: text; /* Important for showing gradient through text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px; /* Example - adjust as needed */
+  overflow-wrap: break-word;
+}
+
+.st-text {
+  width: 35%;
+}
+
+.st-image {
+  width: 35%;
+}
+.my-st-pic {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.st-info {
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  text-align: left;
+}
+
+.st-link {
+  color: #93aeda;
+}
+
+@media (max-width: 768px) {
+  .st-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color: #131314;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .st-text {
+    width: 80%;
+  }
+
+  .my-st-pic {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .st-info {
+    text-align: center;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .st-image {
+    width: 80%;
+  }
+}

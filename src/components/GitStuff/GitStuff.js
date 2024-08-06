@@ -1,6 +1,6 @@
 import "./GitStuff.css";
-import Link from "./Link";
-import List from "./List";
+import Link from "../Link/Link";
+import List from "../List/List";
 import React, { useState, useEffect } from "react";
 
 function GitStuff(userName) {

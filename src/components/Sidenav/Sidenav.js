@@ -1,9 +1,7 @@
 import "./Sidenav.css";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
-function Sidenav({ currentState, setCurrentState }) {
-  const [isExpanded, setIsExpanded] = useState(true);
-
+function Sidenav({ currentState, setCurrentState, isExpanded, setIsExpanded }) {
   // useEffect hook to run code after the component renders
   useEffect(() => {
     const burgerButton = document.querySelector(".burger-button");

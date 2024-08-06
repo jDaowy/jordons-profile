@@ -2,7 +2,8 @@
   display: flex;
   color: white;
   align-items: center;
-  gap: 10vw;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .vertex-logo {
@@ -25,4 +26,23 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px; /* Example - adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .vertex-flex {
+    background-color: #3c4043;
+    height: auto;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .vertex-logo {
+    min-width: 80%;
+  }
+
+  .vertex-text {
+    max-width: fit-content;
+    text-align: center;
+  }
 }

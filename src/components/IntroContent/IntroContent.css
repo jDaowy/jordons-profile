@@ -44,23 +44,15 @@
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
-    flex-grow: 0;
-  }
-  .me,
-  .UM {
-    width: 300px;
-    position: relative;
-    top: 100px;
-    margin: 10px;
-  }
-  .gradient-container,
-  .speel {
-    position: relative;
-    top: 100px;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
   .intro-text {
-    width: auto;
-    padding: 25px;
+    width: 80%;
+  }
+  .me {
+    min-width: 80%;
   }
 }
 
