@@ -18,11 +18,26 @@
   font-size: 25px; /* Example - adjust as needed */
 }
 
+.git-div {
+  width: 50%;
+  hyphens: auto; /* Enable hyphenation */
+  overflow-wrap: break-word; /* Allow breaking words if necessary */
+}
+
 @media (max-width: 768px) {
   .me-git {
     width: 100%;
   }
   .profile-avatar {
     min-width: 80%;
+  }
+  .git-div {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .git-title {
+    text-align: center;
   }
 }

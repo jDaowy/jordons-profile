@@ -43,7 +43,7 @@ function GitStuff(userName) {
           alt={profile.name}
         />
       </div>
-      <div>
+      <div className="git-div">
         <div className="git-gradient">
           <h1 className="git-title">Github Rest API</h1>
         </div>

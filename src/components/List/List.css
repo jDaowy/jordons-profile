@@ -1,23 +1,38 @@
-ul{
-    list-style-type: none;
-    padding-left: 0px;
+ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
-li{
-    padding: 10px;
-    text-align: left;
-    margin: 10px;
-    background-color: rgb(30,31,32);
-    font-size: 20px;
-    font-weight: 100;
-    border-radius: 10px;
+li {
+  padding: 10px;
+  text-align: left;
+  margin: 10px;
+  background-color: rgb(30, 31, 32);
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
 }
 
-.ItemField{
-
-    color: white;
+.ItemField {
+  color: white;
 }
 
-.ItemValue{
-    color: white;
+.ItemValue {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .list-items {
+    max-width: 100%;
+  }
+
+  li {
+    max-width: 100%;
+    line-break: anywhere;
+    padding: 0px;
+  }
+
+  .perline {
+    padding: 2vh;
+  }
 }
