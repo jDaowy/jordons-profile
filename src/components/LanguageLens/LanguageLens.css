@@ -1,0 +1,47 @@
+.lens-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lens-img {
+  height: 60%;
+  max-width: 50%;
+  border-radius: 15px;
+}
+
+p {
+  color: white;
+}
+
+.lens-grad {
+  background: linear-gradient(to right, #e6bbad, #796217);
+  -webkit-background-clip: text; /* Important for showing gradient through text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px; /* Example - adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .lens-container {
+    height: auto;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .lens-img {
+    min-width: 80%;
+  }
+  .vertex-text {
+    max-width: fit-content;
+    text-align: center;
+  }
+
+  .lens-text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

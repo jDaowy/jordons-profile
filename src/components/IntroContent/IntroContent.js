@@ -1,7 +1,7 @@
 import "./IntroContent.css";
 
 function IntroContent() {
-  const vertexLink = "https://gemini-fb-382fd.web.app/";
+  const vertexLink = "https://pdf-translator-ea570.web.app/";
 
   return (
     <div className="content">
@@ -18,8 +18,8 @@ function IntroContent() {
           skills to innovative projects that push the boundaries of software
           engineering.{" "}
           <strong>
-            Try my latest app in the following link that uses Google Firebase
-            and Google VertexAI to digitize handwriting.{" "}
+            Try my latest app that uses Google Gemini to translate pdfs for
+            language learning.{" "}
           </strong>
           <a
             className="vertex-link"
@@ -27,7 +27,7 @@ function IntroContent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Image2Text
+            LanguageLens
           </a>
         </p>
         <img

@@ -9,6 +9,7 @@ import VertexAI from "../VertexAI/VertexAI";
 import GitStuff from "../GitStuff/GitStuff";
 import CharacterScreen from "../CharacterScreen/CharacterScreen";
 import Streamlit from "../Streamlit/Streamlit";
+import LanguageLens from "../LanguageLens/LanguageLens";
 
 function Main() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(true);
@@ -70,6 +71,7 @@ function Main() {
                 </b>
               </div>
               <IntroContent className="phone-intro" />
+              <LanguageLens />
               <VertexAI />
               <GitStuff userName="jDaowy" />
               <CharacterScreen isMobile={isMobile} />

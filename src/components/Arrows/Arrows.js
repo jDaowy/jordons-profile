@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Arrows({ currentState, setCurrentState }) {
-  const MAX_STATE = 4; // Maximum value for currentState
+  const MAX_STATE = 5; // Maximum value for currentState
 
   const handleGoBack = () => {
     setCurrentState((prev) => Math.max(0, prev - 1));
