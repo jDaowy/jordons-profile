@@ -35,7 +35,7 @@ function GitStuff(userName) {
     fetchData();
   }, [userName]);
   return (
-    <div className="content">
+    <div className="content git-container">
       <div className="me-git">
         <img
           className="profile-avatar"

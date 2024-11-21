@@ -27,6 +27,7 @@ p {
 @media (max-width: 768px) {
   .lens-container {
     height: auto;
+    background-color: #3c4043;
     flex-direction: column;
     padding-top: 5vh;
     padding-bottom: 5vh;

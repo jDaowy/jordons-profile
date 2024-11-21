@@ -25,6 +25,10 @@
 }
 
 @media (max-width: 768px) {
+  .git-container {
+    background-color: #3c4043;
+  }
+
   .me-git {
     width: 100%;
   }

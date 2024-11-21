@@ -30,7 +30,6 @@
 
 @media (max-width: 768px) {
   .vertex-flex {
-    background-color: #3c4043;
     height: auto;
     flex-direction: column;
     padding-top: 5vh;
