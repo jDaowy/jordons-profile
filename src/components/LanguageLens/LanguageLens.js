@@ -6,7 +6,7 @@ function LanguageLens() {
   return (
     <div className="lens-container">
       <img
-        src="languageLens.png"
+        src="languageLens.PNG"
         alt="app screenshot"
         className="lens-img"
       ></img>
