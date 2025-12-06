@@ -54,25 +54,13 @@ function Sidenav({ currentState, setCurrentState, isExpanded, setIsExpanded }) {
               className={`but ${currentState === 2 ? "active" : ""}`}
               onClick={() => handleItemClick(2)} // Add onClick handler
             >
-              Image2Text
+              Github Rest API
             </span>
             <span
               className={`but ${currentState === 3 ? "active" : ""}`}
               onClick={() => handleItemClick(3)} // Add onClick handler
             >
-              Github Rest API
-            </span>
-            <span
-              className={`but ${currentState === 4 ? "active" : ""}`}
-              onClick={() => handleItemClick(4)} // Add onClick handler
-            >
               Image Generation
-            </span>
-            <span
-              className={`but ${currentState === 5 ? "active" : ""}`}
-              onClick={() => handleItemClick(5)} // Add onClick handler
-            >
-              LangChain LLM
             </span>
           </div>
         )}
